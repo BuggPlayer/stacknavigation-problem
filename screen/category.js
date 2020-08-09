@@ -2,10 +2,12 @@ import React from "react";
 import { View, TouchableOpacity, Text, Image, StyleSheet } from "react-native";
 
 const Category = (props) => {
+  console.log("final screen", props);
   const { navigation } = props;
+  //const [id,setId]
   return (
     <View style={styles.root}>
-      <TouchableOpacity onPress={() => navigation.navigate("CategoryDetaisl")}>
+      <TouchableOpacity onPress={() => navigation.navigate("CategoryDetails")}>
         <Image style={styles.foodImage} source={{ uri: props.image }} />
       </TouchableOpacity>
       <Text style={styles.title}>Heelo</Text>

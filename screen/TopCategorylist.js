@@ -3,7 +3,8 @@ import React from "react";
 import Category from "./category";
 
 const TopCategorylist = (props) => {
-  return <Category />;
+  console.log("props hai", props);
+  return <Category navigation={props.navigation} />;
 };
 
 //const styles = StyleSheet.create({});

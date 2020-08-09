@@ -1,12 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import TopCategorylist from "./TopCategorylist";
 
-const CategoryDetails = (props) => {
+const MaineFiles = (props) => {
   return (
-    <View>
-      <Text>detalis screen</Text>
-  {/* <Text>{props.navigation.params.id}</Text> */}
-    </View>
+   <TopCategorylist />
   );
 };
 
@@ -19,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CategoryDetails;
+export default MaineFiles;
